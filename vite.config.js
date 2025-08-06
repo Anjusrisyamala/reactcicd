@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react-swc';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/reactcicd/', // ← add leading and trailing slash
+  base: '/reactcicd/', // ✅ this is required for GitHub Pages to load assets correctly
 });
